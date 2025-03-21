@@ -60,12 +60,16 @@ const MovieSubmittedScreen = ({ submittedData, handleStartOver }) => {
                 {submittedData.selectedMovie}
               </p>
             </div>
-            <div className="mt-4 pt-4 border-t border-[#E5E5E5] w-full">
-              <p className="text-sm font-medium text-gray-500 mb-2">ความคิดเห็น:</p>
-              <p className="text-sm text-gray-800 break-words whitespace-pre-wrap overflow-hidden max-w-full">
-                {submittedData.comment}
-              </p>
-            </div>
+            {submittedData.comment && (
+              <div className="mt-4 pt-4 border-t border-[#E5E5E5] w-full">
+                <p className="text-sm font-medium text-gray-500 mb-2">
+                  ความคิดเห็น:
+                </p>
+                <p className="text-sm text-gray-800 break-words whitespace-pre-wrap overflow-hidden max-w-full">
+                  {submittedData.comment}
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>
