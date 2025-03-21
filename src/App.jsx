@@ -1,12 +1,12 @@
-import './index.css'; 
+import MovieSurvey from "./components/custom/MovieSurvey";
+import "./index.css";
 
 function App() {
-
   return (
     <>
-    <h1>Hellow world</h1>
+      <MovieSurvey />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
